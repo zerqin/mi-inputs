@@ -21,11 +21,15 @@ No root, no bootloader unlock, no custom firmware, no factory reset — and
 > were created with AI assistance; the result was reviewed and tested on real
 > hardware by a human.
 
-## Screenshot
+## Screenshots
 
-![Mi — Inputs input picker on Xiaomi MiTV-MSSP0](docs/input-picker.png)
+![The Mi button opens the input list](docs/input-picker.png)
 
-*The Mi button opens the input list (Russian UI).*
+*The Mi button opens the input list.*
+
+![Settings](docs/settings.png)
+
+*Settings: service status, Mi key, pause, and the input list.*
 
 ## Features
 
@@ -312,11 +316,15 @@ MiTV-MSSP0 (устройство `amelie`, Android 9, сборка PI.4072) с P
 > **Сгенерировано ИИ.** Приложение, его исходный код и эта документация созданы
 > с помощью ИИ; результат проверен человеком на реальном телевизоре.
 
-## Скриншот
+## Скриншоты
 
-![Список входов Mi — Inputs на Xiaomi MiTV-MSSP0](docs/input-picker.png)
+![Кнопка Mi открывает список входов](docs/input-picker.png)
 
-*Кнопка Mi открывает список входов (русский интерфейс).*
+*Кнопка Mi открывает список входов.*
+
+![Настройки](docs/settings.png)
+
+*Настройки: состояние службы, клавиша Mi, пауза и список входов.*
 
 ## Возможности
 
