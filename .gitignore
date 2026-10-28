@@ -1,0 +1,19 @@
+# Build output
+dist/
+build/work/
+*.apk
+*.idsig
+
+# Signing keys — never commit
+*.keystore
+*.jks
+
+# Local toolchain (JDK, Android build-tools, android.jar)
+build/tools/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+Thumbs.db
+.DS_Store

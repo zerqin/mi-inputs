@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi — Inputs</string>
+    <string name="app_title">Mi — Входы</string>
+    <string name="app_subtitle">Кнопка Mi открывает список источников входа</string>
+    <string name="service_description">Перехват кнопки Mi и список источников входа</string>
+
+    <string name="section_status">СОСТОЯНИЕ</string>
+    <string name="service_on">Служба включена</string>
+    <string name="service_on_hint">Перехват кнопки Mi работает</string>
+    <string name="service_off">Служба выключена</string>
+    <string name="service_off_hint">Нажмите, чтобы включить (или см. «Как включить»)</string>
+    <string name="intercept_on">Перехват Mi: включён</string>
+    <string name="intercept_off">Перехват Mi: выключен</string>
+    <string name="intercept_on_hint">Нажмите, чтобы приостановить — Mi будет работать как обычно</string>
+    <string name="intercept_off_hint">Приостановлен — Mi работает как обычно. Нажмите, чтобы включить</string>
+    <string name="interception_enabled">Перехват включён</string>
+    <string name="interception_paused">Перехват приостановлен</string>
+    <string name="service_paused_hint">Перехват приостановлен</string>
+
+    <string name="section_button">КНОПКА</string>
+    <string name="mi_key">Клавиша Mi: %1$d</string>
+    <string name="mi_key_hint">Нажмите, чтобы определить заново</string>
+
+    <string name="input_list">Список входов: %1$s</string>
+    <string name="input_list_custom">свой</string>
+    <string name="input_list_system">системный</string>
+    <string name="input_list_custom_hint">Понятные названия, можно изменить</string>
+    <string name="input_list_system_hint">Штатный список прошивки</string>
+
+    <string name="section_inputs">ВХОДЫ (%1$d)</string>
+    <string name="section_inputs_plain">ВХОДЫ</string>
+    <string name="no_inputs">Входы не найдены</string>
+    <string name="no_inputs_hint">Нажмите «Обновить список». Если не поможет — переключитесь на системный список входов.</string>
+    <string name="no_system_name">системное название отсутствует</string>
+    <string name="hidden_prefix">скрыт • %1$s</string>
+    <string name="refresh_list">Обновить список</string>
+    <string name="list_refreshed">Список обновлён</string>
+
+    <string name="section_check">ПРОВЕРКА</string>
+    <string name="ports_and_inputs">Порты и входы</string>
+    <string name="ports_and_inputs_hint">Сколько портов нашлось и как они определены</string>
+    <string name="open_input_list">Открыть список входов</string>
+    <string name="open_input_list_hint">Так выглядит попап по кнопке Mi</string>
+    <string name="how_to_enable">Как включить службу</string>
+    <string name="how_to_enable_hint">Команда для ADB (если настройки пустые)</string>
+
+    <string name="language_title">Язык</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Понятно</string>
+
+    <string name="footer">Работает без интернета. Настройки хранятся на телевизоре.\nВерсия %1$s</string>
+
+    <string name="capture_title">Кнопка Mi</string>
+    <string name="capture_message">Нажмите кнопку Mi на пульте.\nПриложение запомнит код этой клавиши.</string>
+    <string name="capture_saved">Сохранено: клавиша %1$d</string>
+    <string name="enable_service_first">Сначала включите службу</string>
+    <string name="settings_unavailable">Настройки недоступны — включите через ADB</string>
+
+    <string name="popup_title">Список входов</string>
+    <string name="popup_custom">Свой список (рекомендуется)</string>
+    <string name="popup_system">Системный список прошивки</string>
+
+    <string name="rename_title">Название: %1$s</string>
+    <string name="rename_system_name">Системное название: %1$s</string>
+    <string name="restore_system_name">Вернуть системное название</string>
+    <string name="show_in_list">Показать в списке</string>
+    <string name="hide_from_list">Скрыть из списка</string>
+
+    <string name="preset_tv">ТВ</string>
+    <string name="preset_pc">ПК</string>
+    <string name="preset_media">Медиаплеер</string>
+    <string name="preset_console">Игровая консоль</string>
+
+    <string name="help_title">Как включить службу</string>
+    <string name="help_text">1. Откройте «Специальные возможности» на телевизоре.\n2. Если список служб пуст, включите с компьютера:\n\nadb shell settings put secure enabled_accessibility_services «%1$s»\nadb shell settings put secure accessibility_enabled 1\n\nОткат: уберите службу из этой строки или удалите приложение.</string>
+
+    <string name="ports_title">Порты и входы</string>
+    <string name="ports_found">Найдено %1$d: %2$s</string>
+    <string name="ports_empty_hint">Система не отдала список TvInputManager. Попробуйте «Список входов: системный» в настройках.</string>
+    <string name="ports_refresh">Обновить</string>
+    <string name="ports_refresh_hint">Перечитать список у системы</string>
+    <string name="ports_refreshed">Обновлено</string>
+    <string name="section_how">КАК ЭТО ОПРЕДЕЛЯЕТСЯ</string>
+    <string name="how_list_title">Список и типы</string>
+    <string name="how_list_text">Берутся из android.media.tv.TvInputManager — того же источника, что использует штатный список входов.</string>
+    <string name="how_port_title">Номер порта HDMI</string>
+    <string name="how_port_text">1) цифра из системного названия; 2) цифра из идентификатора входа; 3) порядок портов. Если вход переименован («pc») — сработает порядок.</string>
+    <string name="how_signal_title">Есть ли сигнал на порту</string>
+    <string name="how_signal_text">Обычному приложению недоступно: метод getInputState скрыт в Android. Проверить можно вручную — нажмите на вход и посмотрите на экран.</string>
+    <string name="ports_footer">Нажмите на вход, чтобы проверить переключение.</string>
+    <string name="port_hdmi">порт HDMI %1$d</string>
+    <string name="port_source_label">из системного названия</string>
+    <string name="port_source_id">из идентификатора входа</string>
+    <string name="port_source_order">по порядку портов</string>
+    <string name="hidden_in_list">скрыт в списке</string>
+    <string name="system_name">системное название: %1$s</string>
+    <string name="switch_to">Переключаю: %1$s</string>
+    <string name="switch_failed">Не удалось переключить: %1$s</string>
+
+    <string name="popup_inputs_title">ИСТОЧНИКИ ВХОДА</string>
+    <string name="popup_empty">Входы не найдены.\nПроверьте настройки телевизора.</string>
+    <string name="popup_open_system">Открыть системный список</string>
+    <string name="popup_switch_failed">Не удалось переключить на «%1$s»</string>
+    <string name="popup_system_missing">Системный список входов не найден</string>
+    <string name="popup_system_failed">Не удалось открыть системный список</string>
+
+    <string name="type_tv">ТВ</string>
+    <string name="type_component">Компонент</string>
+    <string name="type_input">Вход</string>
+    <string name="name_tv">ТВ</string>
+    <string name="name_pc_vga">ПК (VGA)</string>
+    <string name="summary_empty">входы не найдены</string>
+</resources>

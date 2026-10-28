@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi — Inputs</string>
+    <string name="app_title">Mi — Inputs</string>
+    <string name="app_subtitle">The Mi button opens the input source list</string>
+    <string name="service_description">Intercept the Mi button and show input sources</string>
+
+    <string name="section_status">STATUS</string>
+    <string name="service_on">Service is on</string>
+    <string name="service_on_hint">Mi button interception is active</string>
+    <string name="service_off">Service is off</string>
+    <string name="service_off_hint">Tap to enable (or see “How to enable”)</string>
+    <string name="intercept_on">Mi interception: On</string>
+    <string name="intercept_off">Mi interception: Off</string>
+    <string name="intercept_on_hint">Tap to pause — Mi will work as usual</string>
+    <string name="intercept_off_hint">Paused — Mi works as usual. Tap to resume</string>
+    <string name="interception_enabled">Interception enabled</string>
+    <string name="interception_paused">Interception paused</string>
+    <string name="service_paused_hint">Interception is paused</string>
+
+    <string name="section_button">BUTTON</string>
+    <string name="mi_key">Mi key: %1$d</string>
+    <string name="mi_key_hint">Tap to detect again</string>
+
+    <string name="input_list">Input list: %1$s</string>
+    <string name="input_list_custom">custom</string>
+    <string name="input_list_system">system</string>
+    <string name="input_list_custom_hint">Friendly names, editable</string>
+    <string name="input_list_system_hint">Built-in TV list</string>
+
+    <string name="section_inputs">INPUTS (%1$d)</string>
+    <string name="section_inputs_plain">INPUTS</string>
+    <string name="no_inputs">No inputs found</string>
+    <string name="no_inputs_hint">Tap “Refresh list”. If that does not help, switch to the built-in input list.</string>
+    <string name="no_system_name">no system name</string>
+    <string name="hidden_prefix">hidden • %1$s</string>
+    <string name="refresh_list">Refresh list</string>
+    <string name="list_refreshed">List refreshed</string>
+
+    <string name="section_check">CHECK</string>
+    <string name="ports_and_inputs">Ports and inputs</string>
+    <string name="ports_and_inputs_hint">How many ports were found and how they are detected</string>
+    <string name="open_input_list">Open input list</string>
+    <string name="open_input_list_hint">This is the popup the Mi button opens</string>
+    <string name="how_to_enable">How to enable the service</string>
+    <string name="how_to_enable_hint">ADB command (if the settings list is empty)</string>
+
+    <string name="language_title">Language</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Got it</string>
+
+    <string name="footer">Works offline. Settings are stored on the TV.\nVersion %1$s</string>
+
+    <string name="capture_title">Mi button</string>
+    <string name="capture_message">Press the Mi button on the remote.\nThe app will remember this key code.</string>
+    <string name="capture_saved">Saved: key %1$d</string>
+    <string name="enable_service_first">Enable the service first</string>
+    <string name="settings_unavailable">Settings unavailable — enable via ADB</string>
+
+    <string name="popup_title">Input list</string>
+    <string name="popup_custom">Custom list (recommended)</string>
+    <string name="popup_system">Built-in TV list</string>
+
+    <string name="rename_title">Name: %1$s</string>
+    <string name="rename_system_name">System name: %1$s</string>
+    <string name="restore_system_name">Restore system name</string>
+    <string name="show_in_list">Show in list</string>
+    <string name="hide_from_list">Hide from list</string>
+
+    <string name="preset_tv">TV</string>
+    <string name="preset_pc">PC</string>
+    <string name="preset_media">Media player</string>
+    <string name="preset_console">Game console</string>
+
+    <string name="help_title">How to enable the service</string>
+    <string name="help_text">1. Open Accessibility on the TV.\n2. If the service list is empty, enable it from a computer:\n\nadb shell settings put secure enabled_accessibility_services “%1$s”\nadb shell settings put secure accessibility_enabled 1\n\nRollback: remove the service from that line or uninstall the app.</string>
+
+    <string name="ports_title">Ports and inputs</string>
+    <string name="ports_found">Found %1$d: %2$s</string>
+    <string name="ports_empty_hint">The system returned no TvInputManager list. Try “Input list: system” in the settings.</string>
+    <string name="ports_refresh">Refresh</string>
+    <string name="ports_refresh_hint">Re-read the list from the system</string>
+    <string name="ports_refreshed">Refreshed</string>
+    <string name="section_how">HOW THIS IS DETECTED</string>
+    <string name="how_list_title">List and types</string>
+    <string name="how_list_text">Read from android.media.tv.TvInputManager — the same source the built-in input list uses.</string>
+    <string name="how_port_title">HDMI port number</string>
+    <string name="how_port_text">1) digit from the system name; 2) digit from the input ID; 3) port order. If an input was renamed (“pc”), the order is used.</string>
+    <string name="how_signal_title">Signal on the port</string>
+    <string name="how_signal_text">Not available to a normal app: getInputState is hidden in Android. Check it manually — tap an input and look at the screen.</string>
+    <string name="ports_footer">Tap an input to test switching.</string>
+    <string name="port_hdmi">HDMI port %1$d</string>
+    <string name="port_source_label">from the system name</string>
+    <string name="port_source_id">from the input ID</string>
+    <string name="port_source_order">by port order</string>
+    <string name="hidden_in_list">hidden in the list</string>
+    <string name="system_name">system name: %1$s</string>
+    <string name="switch_to">Switching to: %1$s</string>
+    <string name="switch_failed">Could not switch to: %1$s</string>
+
+    <string name="popup_inputs_title">INPUT SOURCES</string>
+    <string name="popup_empty">No inputs found.\nCheck the TV settings.</string>
+    <string name="popup_open_system">Open the built-in list</string>
+    <string name="popup_switch_failed">Could not switch to “%1$s”</string>
+    <string name="popup_system_missing">Built-in input list not found</string>
+    <string name="popup_system_failed">Could not open the built-in list</string>
+
+    <string name="type_tv">TV</string>
+    <string name="type_component">Component</string>
+    <string name="type_input">Input</string>
+    <string name="name_tv">TV</string>
+    <string name="name_pc_vga">PC (VGA)</string>
+    <string name="summary_empty">no inputs found</string>
+</resources>
